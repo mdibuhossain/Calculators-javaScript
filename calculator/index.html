@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="calc">
+        <div>
+            <h1 id="calcTitle">ONLINE CALCULATOR</h1>
+        </div>
+        <div class="calculator">
+            <input type="text" name="dispTxt" id="calDisplay">
+            <span class="calcBtn clearBtn" onclick="document.calc.dispTxt.value = ''">C</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '/'">/</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '*'">*</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '7'">7</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '8'">8</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '9'">9</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '-'">-</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '4'">4</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '5'">5</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '6'">6</span>
+            <span class="calcBtn plusBtn" onclick="document.calc.dispTxt.value += '+'">+</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '1'">1</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '2'">2</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '3'">3</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '0'">0</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '00'">00</span>
+            <span class="calcBtn" onclick="document.calc.dispTxt.value += '.'">.</span>
+            <span class="calcBtn equalBtn"
+                onclick="document.calc.dispTxt.value = eval(document.calc.dispTxt.value)">=</span>
+        </div>
+    </form>
+</body>
+
+</html>

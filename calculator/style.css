@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #21252B;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+    overflow: hidden;
+}
+
+#calcTitle{
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 0.13rem;
+}
+
+.calculator #calDisplay{
+    grid-column: span 4;
+    height: 120px;
+    width: 100%;
+    text-align: right;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    color: whitesmoke;
+    background: #21252B;
+    border: 5px solid #2C313C;
+}
+
+.calcBtn{
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #21252B;
+    background: #2C313C;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.calcBtn:hover{
+    transition: 0s;
+    background: #858585;
+}
+
+.equalBtn:hover {
+    transition: 0s;
+    background: #be7419;
+}
+
+.clearBtn{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.plusBtn{
+    grid-row: span 2;
+    height: 100%;
+}
+
+.equalBtn{
+    background: #995f18;
+    transition: .2s ease-in-out;
+}
